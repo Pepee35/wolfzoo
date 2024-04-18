@@ -25,13 +25,16 @@
                 <a class="nav-link" href="../html/allataink.html">Állataink</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../php/orokbefogadas.php">Örökbefogadás</a>
+                <a class="nav-link active" href="../php/orokbefogadas.php">Örökbefogadás</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../html/jegyarak.html">Jegyárak</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../php/infok.php" tabindex="-1" aria-disabled="true">Információk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/esemenyek.html">Események</a>
               </li>
             </ul>
           </div>
@@ -188,21 +191,21 @@
 
       
   <!-- Modal -->
-  <div class="modal fade" id="levendulahazModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="pandaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Levendula Ház</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Zaidi</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-4">
-                <img src="../img/levendula_haz-min.png" alt="Levendula Ház" class="img-fluid">
+                <img src="../img/panda2.png" alt="Panda2" class="img-fluid">
               </div>
               <div class="col-sm-8">
-                <h2>A Levendula Ház kínálata</h2>
+                <h2>Zaidi</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non libero consequatur, fugiat dolore voluptatum provident at. Commodi ad reiciendis quibusdam magnam illum exercitationem provident magni mollitia expedita? Culpa, autem omnis.</p>
                 <p>Quis aliquam inventore deleniti optio iure necessitatibus molestiae, quaerat accusamus! Nulla nihil ex, doloribus aliquid in maxime iste tempore molestias tenetur minima eos amet quaerat officiis debitis tempora id voluptatibus!</p>
               </div>
