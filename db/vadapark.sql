@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2024. Ápr 17. 16:51
+-- Létrehozás ideje: 2024. Ápr 18. 14:00
 -- Kiszolgáló verziója: 10.4.6-MariaDB
 -- PHP verzió: 7.3.8
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Adatbázis: `vadaspark`
+-- Adatbázis: `vadapark`
 --
 
 -- --------------------------------------------------------
@@ -43,7 +43,8 @@ INSERT INTO `etetes` (`etetesid`, `megnev`, `idopont`, `kep`) VALUES
 (1, 'Pingvinek látványetetése', 'Kedd, péntek 14:00 - 14:15', 'pingvinetetes.jpg'),
 (2, 'Óriás teknősök etetése', 'Hétfő, szerda 10:00 - 10:30', 'teknosetetes.jpg'),
 (3, 'Tigrisek déli etetése', 'Csütörtök 12:00 - 12:30', 'tigrisetetes.jpg'),
-(4, 'Majomparádé - hosszú farkú makákó', 'Szerda, szombat 14:00 - 15:00', 'majometetes.jpg');
+(4, 'Majomparádé - hosszú farkú makákó', 'Szerda, szombat 14:00 - 15:00', 'majometetes.jpg'),
+(5, 'Vidrák etetése', 'Vasárnap  10:00 – 10:30', '’vidraetetes.jpg');
 
 -- --------------------------------------------------------
 
@@ -89,6 +90,26 @@ INSERT INTO `menu` (`menuid`, `megnev`, `leiras`, `ar`, `kep`) VALUES
 
 -- --------------------------------------------------------
 
+--
+-- Tábla szerkezet ehhez a táblához `orokbefogadas`
+--
+
+CREATE TABLE `orokbefogadas` (
+  `nev` varchar(40) COLLATE utf8_hungarian_ci NOT NULL,
+  `telszam` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
+  `email` varchar(70) COLLATE utf8_hungarian_ci NOT NULL,
+  `allatneve` varchar(30) COLLATE utf8_hungarian_ci NOT NULL,
+  `osszeg` int(7) NOT NULL,
+  `fizetes` int(8) NOT NULL,
+  `megj` varchar(80) COLLATE utf8_hungarian_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+--
+-- A tábla adatainak kiíratása `orokbefogadas`
+--
+
+INSERT INTO `orokbefogadas` (`nev`, `telszam`, `email`, `allatneve`, `osszeg`, `fizetes`, `megj`) VALUES
+('tóth máté', '06308787399', 'kisbido@gmail.com', 'Zaidi', 100000, 0, '1 év');
 
 --
 -- Indexek a kiírt táblákhoz
@@ -111,6 +132,12 @@ ALTER TABLE `hirlevel`
 --
 ALTER TABLE `menu`
   ADD PRIMARY KEY (`menuid`);
+
+--
+-- A tábla indexei `orokbefogadas`
+--
+ALTER TABLE `orokbefogadas`
+  ADD PRIMARY KEY (`email`);
 
 --
 -- A kiírt táblák AUTO_INCREMENT értéke
