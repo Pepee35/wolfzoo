@@ -153,16 +153,16 @@
 <script src="../js/bootstrap.min.js"></script>
 
 <script>
-function feliratkozas(){
-let email=document.getElementById('email').value;
-if(email == ""){
-  alert("A mező kitöltése kötelező!");
-}
-else {
-  alert("Sikeresen feliratkozott! Köszönjük!");
-}
-
-}
+  function feliratkozas(){
+  let email=document.getElementById('email').value;
+  if(email == ""){
+    alert("A mező kitöltése kötelező!");
+  }
+  else {
+    alert("Sikeresen feliratkozott! Köszönjük!");
+  }
+  
+  }
 </script>
 
 </body>
