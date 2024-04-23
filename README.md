@@ -2,4 +2,4 @@
 
 # Készítette: Tóth Máté, Prágai Bence
 
-# Források: Pixabay 
+# Képek: Pixabay 
